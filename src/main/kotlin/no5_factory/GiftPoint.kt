@@ -7,17 +7,13 @@ package no5_factory
  * 初期化ロジックの分散を防ぐため、companion objectにFactoryメソッドを用意している。
  *
  */
-class GiftPoint private constructor() {
-    // ポイントの値
-    var value: Int = 0
-        private set
-
-    private constructor(point: Int) : this() {
-        value = point
-    }
+data class GiftPoint constructor(private var _value: Int = 0) {
+    // ポイントの値の取得
+    val value: Int
+        get() = _value
 
     init {
-        if (value < 0) {
+        if (_value < 0) {
             throw IllegalArgumentException("ポイントが0以上ではありません")
         }
     }
