@@ -1,4 +1,4 @@
-package no5_factory
+package no5.factory
 
 fun main() {
     val standardPoint = GiftPoint.forStandardMembership()

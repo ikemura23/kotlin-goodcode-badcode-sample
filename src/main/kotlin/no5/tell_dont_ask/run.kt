@@ -1,11 +1,11 @@
-package no5_tell_dont_ask
+package no5.tell_dont_ask
 
 fun main() {
 
     //    NGな例、呼び出し側からオブジェクトの内部状態を尋ねるべきではない
     //    （EquipmentsのcanChange変数をifで判定している部分）
 
-    //    val equipments = Equipments()
+    //    val equipments = no5.tell_dont_ask.Equipments()
     //    if (equipments.canChange) {
     //        equipments.deactivateAll()
     //    }

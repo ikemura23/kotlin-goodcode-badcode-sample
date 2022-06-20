@@ -1,4 +1,4 @@
-package no5_factory
+package no5.factory
 
 /**
  * 5.2.1 Factoryメソッド
