@@ -6,4 +6,7 @@ fun main() {
 
     val premiumPoint = GiftPoint.forPremiumMembership()
     println("premiumPoint point is ${premiumPoint.value}")
+
+    val totalPoint = standardPoint + premiumPoint
+    println("standardPoint + premiumPoint = ${totalPoint.value}")
 }

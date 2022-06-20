@@ -19,6 +19,8 @@ data class GiftPoint constructor(private var _value: Int = 0) {
         }
     }
 
+    operator fun plus(other: GiftPoint) = GiftPoint(_value + other.value)
+
     companion object {
         // 標準会員向け入会ギフトポイント
         private const val STANDARD_MEMBERSHIP_POINT = 3000
