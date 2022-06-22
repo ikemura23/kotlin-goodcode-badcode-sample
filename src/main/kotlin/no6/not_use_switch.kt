@@ -13,6 +13,12 @@ fun main() {
     // good
     val magic = Fire()
     println("magic name: ${magic.name}")
+
+    // good 2
+    val magics = HashMap<MagitType, Magic>()
+    magics[MagitType.fire] = Fire()
+    magics[MagitType.shiden] = Shiden()
+    println("magic name: ${magics[MagitType.fire]?.name}")
 }
 
 /**
